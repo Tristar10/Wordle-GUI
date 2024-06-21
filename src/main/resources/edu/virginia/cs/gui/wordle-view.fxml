@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="750.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.gui.WordleController">
+   <children>
+      <Label fx:id="errorMsg" alignment="CENTER" prefHeight="100.0" prefWidth="514.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="char0" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char1" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char2" alignment="CENTER" layoutX="75.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char3" alignment="CENTER" layoutX="141.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char4"  alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="285.0" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="char5" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char6" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char7" alignment="CENTER" layoutX="75.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char8" alignment="CENTER" layoutX="141.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char9" alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="345.0" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="char10" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char11" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char12" alignment="CENTER" layoutX="75.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char13" alignment="CENTER" layoutX="141.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char14" alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="405.0" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="char15" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char16" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char17" alignment="CENTER" layoutX="75.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char18" alignment="CENTER" layoutX="141.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char19" alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="465.0" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="char20" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char21" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char22" alignment="CENTER" layoutX="75.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char23" alignment="CENTER" layoutX="141.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char24" alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="504.0" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="char25" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char26" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char27" alignment="CENTER" layoutX="75.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char28" alignment="CENTER" layoutX="141.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="char29" alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="450.0" prefHeight="100.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="yes" alignment="CENTER" prefHeight="30.0" prefWidth="114.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="no" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="114.0" style="-fx-border-color: black;" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
